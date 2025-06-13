@@ -1,7 +1,6 @@
 import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet';
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import useSWR from 'swr';
-import L from 'leaflet';
 import Spinner from '../components/Spinner';
 import { Link } from 'react-router-dom';
 
