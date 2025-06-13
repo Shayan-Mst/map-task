@@ -2,7 +2,7 @@ import { MapContainer, TileLayer, Marker, Tooltip } from 'react-leaflet';
 import { useMemo } from 'react';
 import useSWR from 'swr';
 import Spinner from '../components/Spinner';
-import { Link } from 'react-router-dom';
+
 
 
 export default function MapView({center}) {
@@ -34,7 +34,7 @@ export default function MapView({center}) {
         ))}
       </MapContainer>
 
-      <Link to="/admin">Admin</Link>
+      
     </div>
   );
 }
