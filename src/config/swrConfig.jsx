@@ -8,7 +8,7 @@ export function SWRProvider({ children }) {
    <SWRConfig
   value={{
   fetcher: (url) =>
-
+    
     fetch(url)
     .then(res => res.json())
     .then(data => {
@@ -19,7 +19,7 @@ export function SWRProvider({ children }) {
 
     
      dedupingInterval: 300000, //not going to fetch multiple data with the same key before 5 minutes
-       
+     refreshInterval:300000,   // data being fetched every 5 minutes      
     revalidateIfStale: false,          
     revalidateOnFocus: false,         
   }}
